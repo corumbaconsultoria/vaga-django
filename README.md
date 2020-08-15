@@ -107,7 +107,8 @@ Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
         "peso": 84,
         "criado_em": "2020-06-10T19:00:15-0300",
     }
-]```
+]
+```
 
 ### Detalhar prescrição nutricional
 Acessar os detalhes da prescrição
@@ -123,7 +124,7 @@ Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
 [
     {
         "id": 1,
-        “paciente”: 4,
+        "paciente": 4,
         "peso": 80,
         "criado_em": "2020-08-15T19:31:15-0300",
         "refeicoes": [
@@ -139,7 +140,8 @@ Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
             }
         ]
     }
-]```
+]
+```
 
 ### Tela
 Deverá apresentar a listagem de prescrições associadas ao paciente e o “show” da prescrição selecionada.
