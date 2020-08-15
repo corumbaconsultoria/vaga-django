@@ -24,7 +24,7 @@ Criar uma aplicação para auxiliar a produção de prescrições nutricionais.
 # Especificações técnicas
 
 ## Interface administrativa
-Você deverá implementar uma interface administrativa (pode usar django-admin) na qual a nutricionista (superusuário) poderá cadastrar paciente, refeições e receitas.
+Você deverá implementar uma interface administrativa (pode usar django-admin) na qual a nutricionista  poderá cadastrar paciente, refeições e receitas.
 
 A interface administrativa deve conter as respectivas funcionalidades:
 
@@ -87,11 +87,13 @@ Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
 Lista todas prescrições do usuário (paciente) logado.
 
 #### Requisição
+```
 GET /prescricoes/
 Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
+```
 
 #### Resposta
-json
+```json
 [
     {
         "id": 2,
@@ -105,17 +107,19 @@ json
         "peso": 84,
         "criado_em": "2020-06-10T19:00:15-0300",
     }
-]
+]```
 
 ### Detalhar prescrição nutricional
 Acessar os detalhes da prescrição
 
 #### Requisição
+```
 GET /prescricoes/<id_prescricao>/
 Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
+```
 
 #### Resposta
-json
+```json
 [
     {
         "id": 1,
@@ -135,7 +139,7 @@ json
             }
         ]
     }
-]
+]```
 
 ### Tela
 Deverá apresentar a listagem de prescrições associadas ao paciente e o “show” da prescrição selecionada.
